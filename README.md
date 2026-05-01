@@ -3,6 +3,13 @@
 A Retrieval-Augmented Generation (RAG) chatbot built with LangChain, FAISS vector database, 
 and Llama 3.1 via Groq API. Progressively built from basic RAG to conversational memory.
 
+## Versions
+
+### v1 — Basic RAG (`rag_v1_resume.ipynb`)
+- Load PDF → chunk → embed → FAISS → answer
+- Source: Personal resume PDF
+- No memory — each question independent
+
 ### v2 — Conversational Memory (`rag_v2_arxiv_memory.ipynb`)
 - Added `create_history_aware_retriever` for context-aware retrieval
 - `chat_history` stores full Q&A scroll, sent with every invoke
